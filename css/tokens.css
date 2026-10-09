@@ -1,0 +1,25 @@
+:root {
+    /* Cores */
+    --color-bg: #0e1116;
+    --color-surface: #161b22;
+    --color-border: #262d38;
+    --color-text: #e6edf3;
+    --color-text-muted: #8b96a5;
+    --color-accent: #ffb454;
+  
+    /* Tipografia */
+    --font-sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --font-mono: "JetBrains Mono", ui-monospace, "Cascadia Code", Consolas, monospace;
+  
+    /* Espaçamento (escala de 0,5rem) */
+    --space-1: 0.5rem;
+    --space-2: 1rem;
+    --space-3: 1.5rem;
+    --space-4: 2rem;
+    --space-6: 4rem;
+    --space-8: 6rem;
+  
+    /* Layout */
+    --container: 68rem;
+    --radius: 0.5rem;
+  }
