@@ -107,3 +107,123 @@ section[id] {
     gap: var(--space-2);
     margin-top: var(--space-4);
   }
+
+  /* ---------- Cabeçalho de seção ---------- */
+.section__head {
+    margin-bottom: var(--space-4);
+  }
+  
+  .section__label {
+    margin: 0 0 var(--space-1);
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    color: var(--color-accent);
+  }
+  
+  .section__title {
+    margin: 0;
+    font-size: clamp(1.75rem, 3vw + 1rem, 2.5rem);
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+  
+  /* ---------- Sobre ---------- */
+  .about {
+    display: grid;
+    gap: var(--space-6);
+    align-items: start;
+  }
+  
+  .about > * {
+    min-width: 0;
+  }
+  
+  @media (min-width: 60rem) {
+    .about {
+      grid-template-columns: 1.2fr 1fr;
+    }
+  }
+  
+  .about__text p {
+    max-width: 38rem;
+  }
+  
+  /* ---------- Linha do tempo ---------- */
+  .timeline {
+    margin: 0;
+    padding: 0 0 0 var(--space-3);
+    list-style: none;
+    border-left: 1px solid var(--color-border);
+  }
+  
+  .timeline__item {
+    position: relative;
+    padding-bottom: var(--space-4);
+  }
+  
+  .timeline__item:last-child {
+    padding-bottom: 0;
+  }
+  
+  /* A bolinha fica sobre a linha vertical, deslocada para a esquerda */
+  .timeline__item::before {
+    content: "";
+    position: absolute;
+    top: 0.45rem;
+    left: calc(var(--space-3) * -1 - 0.3rem);
+    width: 0.6rem;
+    height: 0.6rem;
+    border: 2px solid var(--color-accent);
+    border-radius: 50%;
+    background: var(--color-bg);
+  }
+  
+  .timeline__title {
+    margin: 0 0 0.25rem;
+    font-family: var(--font-mono);
+    font-size: 0.95rem;
+    font-weight: 500;
+  }
+  
+  .timeline__desc {
+    margin: 0;
+    font-size: 0.95rem;
+    color: var(--color-text-muted);
+  }
+  
+  /* ---------- Tecnologias ---------- */
+  .tech {
+    display: grid;
+    gap: var(--space-3);
+  }
+  
+  .tech > * {
+    min-width: 0;
+  }
+  
+  @media (min-width: 48rem) {
+    .tech {
+      grid-template-columns: 1.4fr 1fr;
+    }
+  }
+  
+  .tech__group {
+    padding: var(--space-3);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+  }
+  
+  .tech__title {
+    margin: 0 0 0.25rem;
+    font-family: var(--font-mono);
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--color-accent);
+  }
+  
+  .tech__desc {
+    margin: 0 0 var(--space-3);
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+  }
