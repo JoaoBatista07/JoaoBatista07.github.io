@@ -198,3 +198,79 @@
     gap: var(--space-2);
     margin-top: auto;
   }
+
+  /* ---------- Certificação ---------- */
+.cert {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+    padding: var(--space-3);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+  }
+  
+  /* Tracejado e sem fundo: ainda não conquistada (mesma lógica das tags em estudo) */
+  .cert--pending {
+    background: transparent;
+    border-style: dashed;
+  }
+  
+  .cert__issuer {
+    margin: 0;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--color-accent);
+  }
+  
+  .cert__title {
+    margin: 0;
+    font-size: 1.05rem;
+    font-weight: 500;
+  }
+  
+  .cert__meta {
+    margin: 0;
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+  }
+  
+  .cert__link {
+    margin-top: auto;
+    padding-top: var(--space-1);
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+  }
+  
+  .cert .badge {
+    align-self: flex-start;
+  }
+  
+  /* ---------- Link de contato ---------- */
+  .contact-link {
+    display: block;
+    padding: var(--space-3);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    color: var(--color-text);
+    text-decoration: none;
+    transition: transform 0.2s, border-color 0.2s;
+  }
+  
+  .contact-link:hover {
+    transform: translateY(-2px);
+    border-color: var(--color-accent);
+  }
+  
+  .contact-link__label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--color-accent);
+  }
+  
+  .contact-link__value {
+    overflow-wrap: anywhere;
+  }
