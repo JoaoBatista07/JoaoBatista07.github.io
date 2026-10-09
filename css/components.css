@@ -1,0 +1,92 @@
+/* ---------- Botões ---------- */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.75rem 1.25rem;
+    border: 1px solid transparent;
+    border-radius: var(--radius);
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: transform 0.2s, border-color 0.2s, color 0.2s;
+  }
+  
+  .btn:hover {
+    transform: translateY(-2px);
+  }
+  
+  .btn--primary {
+    background: var(--color-accent);
+    border-color: var(--color-accent);
+    color: var(--color-bg);
+  }
+  
+  .btn--ghost {
+    border-color: var(--color-border);
+    color: var(--color-text);
+  }
+  
+  .btn--ghost:hover {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+  }
+  
+  /* ---------- Janela de terminal ---------- */
+  .terminal {
+    overflow: hidden;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    box-shadow: 0 1.5rem 3rem -1rem rgb(0 0 0 / 0.6);
+  }
+  
+  .terminal__bar {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.7rem 1rem;
+    border-bottom: 1px solid var(--color-border);
+  }
+  
+  /* Bolinhas neutras, para manter o âmbar como única cor de destaque */
+  .terminal__dot {
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    background: var(--color-border);
+  }
+  
+  .terminal__title {
+    margin-left: 0.5rem;
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+  }
+  
+  .terminal__body {
+    padding: var(--space-3);
+  }
+  
+  .terminal__body p {
+    margin: 0 0 0.35rem;
+    overflow-wrap: anywhere;
+  }
+  
+  .terminal__prompt {
+    margin-right: 0.6ch;
+    color: var(--color-accent);
+  }
+  
+  .terminal__out {
+    color: var(--color-text-muted);
+  }
+  
+  .terminal__cursor {
+    display: inline-block;
+    width: 0.6ch;
+    height: 1.1em;
+    background: var(--color-accent);
+    vertical-align: text-bottom;
+  }

@@ -13,66 +13,71 @@
 
   <link rel="stylesheet" href="css/tokens.css">
   <link rel="stylesheet" href="css/base.css">
+
+    <link rel="stylesheet" href="css/tokens.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+
+
   <script src="js/main.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
 
-  <header class="site-header">
-    <nav class="container" aria-label="Principal">
-      <a href="#inicio">João Batista</a>
-      <ul>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#tecnologias">Tecnologias</a></li>
-        <li><a href="#estudos">Estudos</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
+<header class="site-header">
+  <nav class="container" aria-label="Principal">
+    <a class="brand" href="#inicio"><span class="brand__prompt">&gt;</span> joao.batista</a>
+    <ul class="nav__list">
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#projetos">Projetos</a></li>
+      <li><a href="#tecnologias">Tecnologias</a></li>
+      <li><a href="#estudos">Estudos</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+</header>
 
   <main id="conteudo">
-    <section id="inicio" class="section">
-      <div class="container">
-        <h1>João Vitor Bispo Batista</h1>
-        <p>Estudante de ADS na Fatec, com foco em back-end com Java e Spring Boot.</p>
-      </div>
-    </section>
 
-    <section id="sobre" class="section">
-      <div class="container">
-        <h2>Sobre</h2>
-      </div>
-    </section>
+    <section id="inicio" class="section hero">
+        <div class="container hero__grid">
+          <div class="hero__text">
+            <p class="eyebrow">// olá, eu sou</p>
+            <h1>João Vitor Bispo Batista</h1>
+            <p class="hero__lead">
+              Estudante de Análise e Desenvolvimento de Sistemas na Fatec e estagiário de
+              Planejamento Comercial no Itaú, em transição para engenharia de software.
+              Foco em back-end com Java e Spring Boot.
+            </p>
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#projetos">Ver projetos</a>
+              <a class="btn btn--ghost" href="https://github.com/JoaoBatista07" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </div>
+      
+          <div class="terminal" aria-hidden="true">
+            <div class="terminal__bar">
+              <span class="terminal__dot"></span>
+              <span class="terminal__dot"></span>
+              <span class="terminal__dot"></span>
+              <span class="terminal__title">joao@portfolio: ~</span>
+            </div>
+            <div class="terminal__body">
+              <p><span class="terminal__prompt">$</span>whoami</p>
+              <p class="terminal__out">joao-vitor-bispo-batista</p>
+              <p><span class="terminal__prompt">$</span>cat foco.txt</p>
+              <p class="terminal__out">back-end · java · spring boot</p>
+              <p><span class="terminal__prompt">$</span>cat status.txt</p>
+              <p class="terminal__out">ADS @ Fatec, 3º semestre</p>
+              <p class="terminal__out">Planejamento Comercial @ Itaú</p>
+              <p class="terminal__out">em transição → engenharia de software</p>
+              <p><span class="terminal__prompt">$</span><span class="terminal__cursor"></span></p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <section id="projetos" class="section">
-      <div class="container">
-        <h2>Projetos</h2>
-      </div>
-    </section>
-
-    <section id="tecnologias" class="section">
-      <div class="container">
-        <h2>Tecnologias</h2>
-      </div>
-    </section>
-
-    <section id="estudos" class="section">
-      <div class="container">
-        <h2>Estudos e certificações</h2>
-      </div>
-    </section>
-
-    <section id="contato" class="section">
-      <div class="container">
-        <h2>Contato</h2>
-        <ul>
-          <li><a href="https://github.com/JoaoBatista07" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-          <li><a href="https://www.linkedin.com/in/jo%C3%A3o-bispo-batista/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-          <li><a href="mailto:joaovtb00@gmail.com">joaovtb00@gmail.com</a></li>
-        </ul>
-      </div>
-    </section>
   </main>
 
   <footer class="section">
