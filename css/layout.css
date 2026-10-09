@@ -227,3 +227,16 @@ section[id] {
     font-size: 0.9rem;
     color: var(--color-text-muted);
   }
+
+  /* ---------- Projetos ---------- */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr));
+    gap: var(--space-3);
+  }
+  
+  .projects__more {
+    margin-top: var(--space-4);
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+  }
