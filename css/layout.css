@@ -285,3 +285,11 @@ section[id] {
   .site-footer p {
     margin: 0;
   }
+
+  /* ---------- Item ativo do menu ---------- */
+.nav__list a[aria-current="location"] {
+    color: var(--color-accent);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.35em;
+  }
