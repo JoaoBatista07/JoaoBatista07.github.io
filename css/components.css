@@ -274,3 +274,25 @@
   .contact-link__value {
     overflow-wrap: anywhere;
   }
+
+  /* ---------- Animação do terminal ---------- */
+/* visibility (e não display) mantém o espaço da linha e evita pulos de layout */
+.terminal .is-pending {
+    visibility: hidden;
+  }
+  
+  .terminal__cursor {
+    animation: blink 1s steps(1) infinite;
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .terminal__cursor {
+      animation: none;
+    }
+  }
