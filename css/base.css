@@ -77,3 +77,8 @@ a {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* O main só recebe foco via link "pular para o conteúdo", então não precisa do contorno */
+main:focus {
+    outline: none;
+  }

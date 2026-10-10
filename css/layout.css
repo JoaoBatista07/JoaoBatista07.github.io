@@ -29,6 +29,8 @@ section[id] {
   }
   
   .brand {
+    display: inline-block;
+    padding-block: 0.6rem;
     font-family: var(--font-mono);
     font-weight: 500;
     color: var(--color-text);
@@ -42,20 +44,21 @@ section[id] {
   .nav__list {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--space-1) var(--space-3);
+    gap: 0 var(--space-3);
     margin: 0;
     padding: 0;
     list-style: none;
   }
   
   .nav__list a {
+    display: inline-block;
+    padding-block: 0.6rem;
     font-family: var(--font-mono);
     font-size: 0.875rem;
     color: var(--color-text-muted);
     text-decoration: none;
     transition: color 0.2s;
   }
-  
   .nav__list a:hover {
     color: var(--color-text);
   }
