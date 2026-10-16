@@ -133,7 +133,7 @@ section[id] {
   /* ---------- Sobre ---------- */
   .about {
     display: grid;
-    gap: var(--space-6);
+    gap: var(--space-4);
     align-items: start;
   }
   
@@ -141,14 +141,15 @@ section[id] {
     min-width: 0;
   }
   
-  @media (min-width: 60rem) {
+  @media (min-width: 48rem) {
     .about {
-      grid-template-columns: 1.2fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-6);
     }
   }
   
   .about__text p {
-    max-width: 38rem;
+    max-width: 44rem;
   }
   
   /* ---------- Linha do tempo ---------- */
